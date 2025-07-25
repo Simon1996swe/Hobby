@@ -138,7 +138,7 @@ async def create_custom_list(name: str, items: List[str]):
         "id": str(uuid.uuid4()),
         "name": name,
         "items": items,
-        "created_at": str(pd.Timestamp.now())
+        "created_at": str(datetime.now())
     }
     
     # Store in MongoDB (optional for persistence)
