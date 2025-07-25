@@ -175,7 +175,7 @@ async def spin_wheel(food_items: List[str]):
     result = {
         "selected_food": selected_food,
         "theme": selected_theme,
-        "timestamp": str(pd.Timestamp.now()),
+        "timestamp": str(datetime.now()),
         "total_options": len(food_items)
     }
     
